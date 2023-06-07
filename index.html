@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Website</title>
     <script src="https://kit.fontawesome.com/51652eea3a.js" crossorigin="anonymous"></script>
-    <link href="script.js" rel="script">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,11 +23,17 @@
                 <li><a href="blog.html">Blog</a> </li>
                 <li><a href="about.html">About</a> </li>
                 <li><a href="contact.html">Contact</a> </li>
-                <li>
+                <li id="lg-bag">
                     <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
                 </li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
             </ul>
 
+
+        </div>
+        <div id="mobile">
+            <a href="#"><i class="fa  fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
 
@@ -435,7 +441,7 @@
                 <img src="img/pay/play.jpg">
             </div>
             <p>Secured Payment Gateways</p>
-            <img src="img/pay/pay.png">
+            <img src="img/pay/pay.png" class="pay">
 
         </div>
 
@@ -444,6 +450,8 @@
         </div>
     </footer>
 
+
+    <script src="script.js"></script>
 </body>
 
 </html>
