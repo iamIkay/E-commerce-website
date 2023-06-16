@@ -300,8 +300,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-image: url("img/banner/b1.jpg");
+    width: 100%;
     height: 40vh;
+    background-position: center;
+    background-size: cover;
 }
 
 #banner h4 {
@@ -433,11 +437,17 @@ body {
 #newsletter {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #041e42;
     padding: 20px 80px;
     height: 20vh;
     align-items: center;
     margin: 30px 0;
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
 }
 
 #newsletter h4 {
@@ -483,6 +493,7 @@ body {
 footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: start;
     position: relative;
     margin-bottom: 20px;
@@ -491,6 +502,7 @@ footer {
 
 footer .col {
     display: flex;
+    margin-bottom: 30px;
     flex-direction: column;
 }
 
@@ -512,12 +524,15 @@ footer .logo {
 footer .copyright {
     position: absolute;
     bottom: 0px;
+    right: 0px;
+    left: 0px;
     text-align: center;
     width: 100%;
 }
 
 footer .copyright p {
     font-size: 12px;
+
 }
 
 footer .follow i {
@@ -572,7 +587,7 @@ footer .install .pay {
         padding: 80px 0 0 10px;
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-        transition: 0.3s ease;
+        transition: 0.3s;
     }
 
     #navbar.active {
@@ -595,15 +610,66 @@ footer .install .pay {
     }
 
     #close {
+        display: flex;
         position: absolute;
         top: 30px;
         left: 30px;
         color: #222;
         font-size: 24px;
+        text-decoration: none;
     }
 
     #lg-bag {
         display: none;
+    }
+
+    #hero {
+        height: 90vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px;
+    }
+
+    .section-p1 {
+        padding: 40px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #sm-banner .banner-box {
+        height: 30vh;
+        min-width: 100%;
+    }
+
+    #banner3 {
+        padding: 0 40px;
+    }
+
+    #banner3 .banner-box {
+
+        width: 28%;
+    }
+
+    #newsletter .form {
+
+        width: 70%;
     }
 
 
